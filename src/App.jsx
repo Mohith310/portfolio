@@ -3,10 +3,11 @@ import Nav from './Nav'
 import ExperienceAccordion from './ExperienceAccordion'
 import AchievementsCarousel from './AchievementsCarousel'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDatabase } from '@fortawesome/free-solid-svg-icons'
+// import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 import myPhoto from './img/myPhoto.jpg'
 import frontEndImg from './img/frontEnd.avif'
 import backEndImg from './img/backEnd.avif'
+import datbaseImg from './img/database.jpeg'
 
 const experience = [
   {
@@ -97,7 +98,7 @@ export default function App() {
           {[
             { title: 'Front-End Development', desc: 'React JS, JavaScript, Bootstrap, Tailwind', img: frontEndImg },
             { title: 'Back-End Development', desc: 'Python, FastAPI, REST APIs', img: backEndImg },
-            { title: 'Databases', desc: 'MongoDB, PostgreSQL', icon: faDatabase },
+            { title: 'Databases', desc: 'MongoDB, PostgreSQL', img: datbaseImg },
           ].map((item) => (
             <div
               key={item.title}
